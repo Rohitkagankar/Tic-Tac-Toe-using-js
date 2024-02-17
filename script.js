@@ -63,16 +63,16 @@ const showWinner= (winner) =>{
     disableBoxes();
 }
 
-const showWinner1= () =>{
-    boxes.forEach(box,()=>{
-        if(box.innerText !=""){
-            msg.innerText="Match is Draw!,";
-            msgConatainer.classList.remove("hide");
-            disableBoxes();
-        }
-    })
+// const showWinner1= () =>{
+//     boxes.forEach(box,()=>{
+//         if(box.innerText !=""){
+//             msg.innerText="Match is Draw!,";
+//             msgConatainer.classList.remove("hide");
+//             disableBoxes();
+//         }
+//     })
     
-}
+// }
 
 
 const checkWinner =()=>{
@@ -86,9 +86,9 @@ const checkWinner =()=>{
                 // console.log("winer",pos1Val);
                 showWinner(pos1Val);
             }
-            else{
-                showWinner1();
-            }
+            // else{
+            //     showWinner1();
+            // }
         }
     }
 };
